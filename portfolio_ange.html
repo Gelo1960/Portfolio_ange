@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Interactif - Ange Kouassi</title>
+  
+  <!-- Balises meta pour SEO -->
+  <meta name="description" content="Portfolio d'Ange Kouassi, Data Analyst spécialisé en Python, SQL, Power BI, et plus encore. Découvrez mon expérience et mes compétences.">
+  <meta name="keywords" content="Ange Kouassi, Data Analyst, Portfolio, Python, SQL, Power BI, Tableau, Expérience, Compétences">
+  <meta name="author" content="Ange Kouassi">
+  <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
+  <meta property="og:title" content="Portfolio Interactif - Ange Kouassi">
+  <meta property="og:description" content="Découvrez le portfolio interactif d'Ange Kouassi, Data Analyst spécialisé en Python, SQL, Power BI, et plus encore.">
+  <meta property="og:image" content="lien_vers_votre_image_de_partage.jpg">
+  <meta property="og:url" content="https://www.votreportfolio.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Importation des styles et polices -->
+  <link rel="stylesheet" href="portfolio_ange.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+  
+  <!-- Importation de Three.js, GSAP et ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Ange Kouassi</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#portfolio">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Canvas Three.js pour l'arrière-plan -->
+  <canvas id="bg"></canvas>
+  
+  <!-- Header avec effet wow -->
+  <header>
+    <div class="header-content">
+      <h1>Ange Kouassi</h1>
+      <p class="subheader">Data Analyst</p>
+      <a href="#portfolio" class="btn">Voir mon travail</a>
+    </div>
+  </header>
+  
+  <!-- Section Présentation améliorée -->
+  <section id="presentation" class="presentation-section">
+    <div class="presentation-container">
+        <div class="story-part">
+            <h2 class="story-title">Salut, je suis <span>Ange Kouassi</span></h2>
+          <p class="story-text">Actuellement à la recherche d'une alternance en tant que <span>Data Analyst</span> à partir du <span>5 janvier 2024</span>.</p>
+            <p class="story-text">Un passionné de <span>Data Science</span>, de <span>technologie</span> et d'<span>innovation</span>.</p>
+        </div>
+        <div class="story-part">
+            <p class="story-text">Je transforme des données en <span>insights exploitables</span> pour aider les entreprises à prendre des décisions éclairées.</p>
+        </div>
+        <div class="story-part">
+            <p class="story-text">J'utilise des outils comme <span>Python</span>, <span>Power BI</span> et <span>SQL</span> pour visualiser les données et <span>raconter des histoires à travers les chiffres</span>.</p>
+        </div>
+        <div class="story-part">
+            <a href="#portfolio" class="btn">Voir mes projets</a>
+        </div>
+    </div>
+</section>
+
+
+  
+  <!-- Section Expérience -->
+  <section id="experience">
+    <h2 class="section-title">Mon Expérience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Chef de projet marketing</h3>
+        <span>2022 - 2024 | <a href="https://www.ahexiopremium.com" target="_blank">Ahexio Premium</a></span>
+        <ul style="list-style-type: square;">
+        <p><li>Analyse des données pour augmenter le chiffre d'affaires de 30%.</li></p>
+        <p><li>Utilisation de Power BI pour créer des rapports visuels détaillés, aidant à la prise de décision stratégique.</li></p>
+        <p><li>Coordination des campagnes marketing en ligne,
+mesurant et optimisant leur impact a Taide de Google
+          Analytics.</li></p>
+        </ul>
+
+      </div>
+      <div class="timeline-item">
+        <h3>Responsable comptable</h3>
+        <span>2021 - 2022 | <a href="https://www.ahexiopremium.com" target="_blank">Ahexio Premium</a></span>
+        <ul style="list-style-type: square;">
+        <p><li>Analyse des données financières pour fournir des recommandations critiques à la direction.</li></p>
+        <p><li>Mise en place de tableaux de bord de suivi financier, facilitant la gestion budgétaire et la prévision des flux
+          de tresorerie.</li></p>
+        <p><li>Utilisation de SQL pour extraire et analyser des données financières, contribuant à l'élaboration des rapports de performance.</li></p>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Compétences -->
+  <section id="skills">
+    <h2 class="section-title">Mes Compétences</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h4>Python</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="90"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>SQL</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Power BI</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="80"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>R</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="75"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Tableau</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Machine Learning</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="70"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Excel avancé</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="95"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Data Visualization</h4>
+        <div class="progress-bar">
+          <div class="progress" data-width="90"></div>
+        </div>
+      </div>
+    </divimages/data.jpg
+  </section>
+  
+  <!-- Section Portfolio modifiée -->
+  <section id="portfolio">
+  <h2 class="section-title">Mes Projets</h2>
+  <div class="portfolio-container">
+      <!-- Projet 1 -->
+      <div class="portfolio-item">
+          <img src="images/projet1.png" alt="Développement de Stratégies de Croissance">
+          <div class="portfolio-overlay">
+              <h3>Développement de Stratégies de Croissance</h3>
+              <p>Projet de fin d'études axé sur l'analyse des performances de l'entreprise Ahexio Premium...</p>
+              <a href="portfolio_projet1.html" class="btn">Voir le projet</a>
+          </div>
+      </div>
+      
+      <!-- Projet 2 -->
+      <div class="portfolio-item">
+          <img src="images/projet2.png" alt="Analyse des Ventes">
+          <div class="portfolio-overlay">
+              <h3>Analyse des Ventes</h3>
+              <p>Analyse des ventes sur deux ans pour optimiser les stocks et les stratégies de vente...</p>
+              <a href="portfolio_projet2.html" class="btn">Voir le projet</a>
+          </div>
+      </div>
+      
+      <!-- Projet 3 -->
+      <div class="portfolio-item">
+          <img src="images/projet3.png" alt="Analyse de la Fidélisation des Clients">
+          <div class="portfolio-overlay">
+              <h3>Analyse de la Fidélisation des Clients</h3>
+              <p>Analyse des données de 500 000 clients pour prédire le churn et améliorer la rétention...</p>
+              <a href="portfolio_projet3.html" class="btn">Voir le projet</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contactez-moi</h2>
+    <form class="contact-form" action="https://formspree.io/f/kouassiange744@gmail.com" method="POST">
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+
+  
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2024 Ange Kouassi. Tous droits réservés.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/votre-profil" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://www.github.com/votre-profil" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+      <a href="https://www.twitter.com/votre-profil" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </footer>
+  
+  
+  <!-- Script JavaScript -->
+  <script src="portfolio_ange.js"></script>
+</body>
+</html>
